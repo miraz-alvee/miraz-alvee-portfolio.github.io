@@ -4,12 +4,10 @@ import bannerBg from "../public/bannerBg.gif";
 import About from "./components/About/About";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
-import Banner from "./components/Header/Banner";
+import Home from "./components/Header/Home";
 import Navbar from "./components/Header/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import { Element, animateScroll as scroll } from "react-scroll";
-
 import { TbArrowMerge } from "react-icons/tb";
 
 function App() {
@@ -29,7 +27,10 @@ function App() {
   }, []);
 
   const scrollToTop = () => {
-    scroll.scrollToTop();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -42,21 +43,21 @@ function App() {
       }}
     >
       <Navbar />
-      <Element name="banner">
-        <Banner />
-      </Element>
-      <Element name="about">
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
         <About />
-      </Element>
-      <Element name="skills">
+      </div>
+      <div id="skills">
         <Skills />
-      </Element>
-      <Element name="projects">
+      </div>
+      <div id="projects">
         <Projects />
-      </Element>
-      <Element name="contacts">
+      </div>
+      <div id="contacts">
         <Contacts />
-      </Element>
+      </div>
       {showScrollButton && (
         <div className="scroll-button" onClick={scrollToTop}>
           <TbArrowMerge />

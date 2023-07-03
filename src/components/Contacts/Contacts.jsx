@@ -6,6 +6,7 @@ import animationData from "../../../public/mail.json";
 import { AiTwotoneMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFillTelephoneOutboundFill, BsSkype } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
+
 import Lottie from "react-lottie";
 const LottieAnimation = () => {
   const defaultOptions = {
@@ -93,7 +94,7 @@ const Contacts = () => {
           <div className="w-1/2 h-1/2">
             <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
               <p
-                className="text-[#2b9895] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <AiTwotoneMail />
@@ -103,7 +104,7 @@ const Contacts = () => {
             <br />
             <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
               <p
-                className="text-[#2b9895] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <BsFillTelephoneOutboundFill />
@@ -113,7 +114,7 @@ const Contacts = () => {
             <br />
             <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
               <p
-                className="text-[#2b9895] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <ImLocation />
@@ -123,7 +124,7 @@ const Contacts = () => {
 
             <Bounce>
               <h2
-                className="text-3xl text-[#04756F] text-center pb-4 pt-12 font-bold uppercase tracking-wide relative group"
+                className="text-2xl md:text-3xl text-[#04756F] text-center pb-4 md:pt-20 pt-12 font-bold uppercase tracking-wide relative group"
                 style={{
                   letterSpacing: "2px",
                 }}
@@ -164,6 +165,9 @@ const Contacts = () => {
           className="w-11/12 p-12 md:mt-56 md:w-2/5 text-lg text-black  "
           style={{ boxShadow: "0 0 80px  -1px #2b9895" }}
         >
+          <h2 className="text-[#a3beef] font-bold pb-8 text-center text-3xl">
+            Write Me A Message
+          </h2>
           <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto">
             <label className="text-[#2b9895] font-bold text-lg">Name</label>
             <input
@@ -173,7 +177,7 @@ const Contacts = () => {
               required
               placeholder="Enter your name"
             />
-            <br />
+            <br /> <br />
             <label className="text-[#2b9895] font-bold text-lg mt-4">
               Email
             </label>
@@ -184,7 +188,7 @@ const Contacts = () => {
               required
               placeholder="Enter your email"
             />
-            <br />
+            <br /> <br />
             <label className="text-[#2b9895] font-bold text-lg mt-4">
               Message
             </label>
@@ -197,7 +201,8 @@ const Contacts = () => {
               type="submit"
               required
               value="Send"
-              className="bg-[#2b9895] text-white font-bold mt-4 py-2 px-4 rounded-lg cursor-pointer hover:bg-[#0e665f] focus:outline-none focus:ring-2 focus:ring-[#2b9895]"
+              className="text-[#2b9895] bg-black font-bold mt-4 py-2 px-4 rounded-lg cursor-pointer hover:text-[#a3beef] focus:outline-none focus:ring-2 focus:ring-[#2b9895]"
+              style={{ boxShadow: "-1px 10px 14px  -1px #2b9895" }}
             />
           </form>
         </div>

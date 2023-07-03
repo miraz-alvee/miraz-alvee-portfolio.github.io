@@ -9,7 +9,7 @@ import { Rotate } from "react-awesome-reveal";
 import { MdOutlineSimCardDownload } from "react-icons/md";
 AOS.init();
 
-const Banner = () => {
+const Home = () => {
   const el = useRef(null);
   let typed = useRef(null);
 
@@ -85,4 +85,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Home;

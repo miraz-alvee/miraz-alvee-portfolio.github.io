@@ -2,6 +2,20 @@ import React from "react";
 import profile2 from "../../../public/my-picture1.png";
 import { Bounce } from "react-awesome-reveal";
 const About = () => {
+  const getGreeting = () => {
+    const date = new Date();
+    const hours = date.getHours();
+
+    if (hours >= 5 && hours < 12) {
+      return "Good morning!";
+    } else if (hours >= 12 && hours < 17) {
+      return "Good afternoon!";
+    } else if (hours >= 17 && hours < 21) {
+      return "Good evening!";
+    } else {
+      return "Good night!";
+    }
+  };
   return (
     <div className="pt-28 pb-28">
       <Bounce>
@@ -38,6 +52,9 @@ const About = () => {
           data-aos-duration="2000"
           className="w-full md:w-2/5 text-center bg-gray-950 rounded-3xl "
         >
+          <h4 className="text-[#2b9895] text-3xl font-bold">
+            Hi, {getGreeting()}
+          </h4>
           <h4 className="text-[#a3beef] text-lg text-justify p-4">
             I am a final year student of Computer Science & Engineering at
             Independent University Bangladesh (IUB). With a strong passion for
