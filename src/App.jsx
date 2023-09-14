@@ -9,16 +9,18 @@ import Navbar from "./components/Header/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import { TbArrowMerge } from "react-icons/tb";
-
+import LoadingScreen from "./components/LoadingScreen";
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setShowScrollButton(scrollTop > 100);
     };
-
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -32,7 +34,9 @@ function App() {
       behavior: "smooth",
     });
   };
-
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
   return (
     <div
       className="overflow-hidden"
