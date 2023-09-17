@@ -25,7 +25,7 @@ const Projects = () => {
         {/* Project 1 */}
 
         <div
-          className="card  w-96 bg-base-100 shadow-xl"
+          className="card w-96 bg-base-100 shadow-xl"
           style={{ boxShadow: "8px 14px 14px -1px #2b9895" }}
         >
           <figure

@@ -87,14 +87,14 @@ const Contacts = () => {
           data-aos-duration="2000"
           className="w-4/5 md:w-2/5"
         >
-          <div className="w-1/2 h-1/2">
+          <div className="md:w-1/2 h-1/2">
             <LottieAnimation />
           </div>
 
-          <div className="w-1/2 h-1/2">
-            <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
+          <div className="md:w-1/2 h-1/2">
+            <div className="text-[#a3beef] text-lg md:text-2xl flex gap-8 items-center ">
               <p
-                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full md:p-2    text-lg md:text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <AiTwotoneMail />
@@ -102,9 +102,9 @@ const Contacts = () => {
               <p>imtiazahmmed00@gmail.com</p>
             </div>
             <br />
-            <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
+            <div className="text-[#a3beef] text-lg md:text-2xl flex gap-8 items-center">
               <p
-                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full md:p-2   text-lg md:text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <BsFillTelephoneOutboundFill />
@@ -112,9 +112,9 @@ const Contacts = () => {
               <p>+880&nbsp;1784305274</p>
             </div>
             <br />
-            <div className="text-[#a3beef] text-2xl flex gap-8 items-center">
+            <div className="text-[#a3beef] text-lg md:text-2xl flex gap-8 items-center">
               <p
-                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full p-2    text-2xl "
+                className="text-[#2b9895] hover:text-[#a3beef] bg-slate-900 rounded-full md:p-2    text-lg md:text-2xl "
                 style={{ boxShadow: "0 14px 14px -1px #2b9895" }}
               >
                 <ImLocation />
