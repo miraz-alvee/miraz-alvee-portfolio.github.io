@@ -21,11 +21,11 @@ const Home = () => {
         "Web Developer.",
         "Software Engineer.",
       ],
-      typeSpeed: 50,
+      typeSpeed: 100,
       onComplete: () => {
         setTimeout(() => {
           typed.current.reset();
-        }, 2000); // Delay in milliseconds before resetting (2 seconds in this example)
+        }, 3000); // Delay in milliseconds before resetting (2 seconds in this example)
       },
     });
   };

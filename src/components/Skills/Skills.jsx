@@ -14,6 +14,9 @@ import {
   SiAxios,
   SiFirebase,
   SiDaisyui,
+  SiMysql,
+  SiCplusplus,
+  SiCoursera,
 } from "react-icons/si";
 import { TiHtml5, TiCss3 } from "react-icons/ti";
 import { DiNodejs } from "react-icons/di";
@@ -68,22 +71,26 @@ const Skills = () => {
         >
           <p>
             <span className="text-[#2b9895] font-bold text-2xl">
-              Expertise:
+              Languages:
             </span>{" "}
-            HTML5 | CSS3 | Tailwind CSS | Bootstrap5 | JavaScript | Python | ES6
-            | React | jQuery | Firebase | MongoDB{" "}
+            C | C++ | Python | JavaScrip | TypeScript
           </p>
           <br />
           <p>
             <span className="text-[#2b9895] font-bold text-2xl">
-              Comfortable:
+              Front End:
             </span>{" "}
-            REST APIs | Express.js | JWT | AXIOS
+            React | HTML5 | CSS 3 | Tailwind CSS | Bootstrap 5
           </p>{" "}
           <br />
           <p>
-            <span className="text-[#2b9895] font-bold text-2xl">Familiar:</span>{" "}
-            Node.js | Next.js{" "}
+            <span className="text-[#2b9895] font-bold text-2xl">Back End:</span>{" "}
+            Node.js | Express.js
+          </p>{" "}
+          <br />
+          <p>
+            <span className="text-[#2b9895] font-bold text-2xl">Database:</span>{" "}
+            MongoDB | MySQL
           </p>{" "}
           <br />
           <p>
@@ -114,11 +121,17 @@ const Skills = () => {
           &nbsp;
           <SiMongodb />
           &nbsp;
+          <SiMysql />
+          &nbsp;
           <DiNodejs />
           &nbsp;
           <SiExpress />
           &nbsp;
           <SiPython />
+          &nbsp;
+          <SiCplusplus />
+          &nbsp;
+          <SiCoursera />
           &nbsp;
           <SiFirebase />
           &nbsp;
