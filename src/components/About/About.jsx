@@ -56,15 +56,24 @@ const About = () => {
             Hi, {getGreeting()}
           </h4>
           <h4 className="text-[#a3beef] text-lg text-justify p-4">
-            I am a final year student of Computer Science & Engineering at
-            Independent University Bangladesh (IUB). In addition, pursuing my
-            internship at{" "}
+            I am a Junior Software Developer at
             <a
               href="https://www.zednzedit.com/"
               target="_blank"
               className="text-[#2b9895] font-bold"
             >
-              ZedandZed IT Services Ltd.
+              {" "}
+              ZedandZed IT Services Ltd,
+            </a>{" "}
+            having graduated with a degree in Computer Science & Engineering
+            from{" "}
+            <a
+              href="http://iub.ac.bd"
+              target="_blank"
+              className="text-[#2b9895] font-bold"
+            >
+              {" "}
+              Independent University Bangladesh (IUB).
             </a>{" "}
             With a strong passion for web development, I specialize in{" "}
             <span className="text-[#2b9895] font-bold">MERN</span> stack
